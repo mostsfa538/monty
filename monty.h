@@ -54,7 +54,7 @@ typedef struct state_s
 	size_t stack_size;
 } state_t;
 /*	 global vairable 	*/
-extern state_t state
+extern state_t state;
 
 /*	 function readd and exectute instruction_t	*/
 void read_instructions(FILE *file);
@@ -65,7 +65,7 @@ void execute_instruction(instruction_t *stack_handle);
 void _push(stack_t **stack, unsigned int date);
 void _pop(stack_t **stack, unsigned int data);
 void _pall(stack_t **stack, unsigned int data);
-void _pint(stack_t **stack, unsigned int data);
+void _print(stack_t **stack, unsigned int data);
 void _swap(stack_t **stack, unsigned int data);
 void _nop(stack_t **stack, unsigned int data);
 void _add(stack_t **stack, unsigned int data);

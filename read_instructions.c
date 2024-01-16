@@ -6,7 +6,7 @@
  */
 void read_instructions(FILE *file)
 {
-	instruction_t handel_stack[] = {
+	instruction_t handle_stack[] = {
 		{"push", _push},
 		{"pop", _pop},
 		{"pall", _pall},
@@ -24,7 +24,7 @@ void read_instructions(FILE *file)
 	while (getline(&(state.buff_line), &(state.buff_size), file) != -1)
 	{
 		state.data++;
-		execute_instruction(stack_handle);
+		execute_instruction(handle_stack);
 	}
 	free(state.buff_line);
 	stack_free(state.stack);
