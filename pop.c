@@ -3,7 +3,7 @@
 /**
  * _pop - pop the last element
  * @stack: the stack
- * @data: data
+ * @data: data.
  *
  * Return: void
  */
