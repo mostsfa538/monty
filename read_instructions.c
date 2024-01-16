@@ -22,5 +22,12 @@ void read_instructions(FILE *file)
 		{NULL, NULL}
 	};
 
+	while (getline(&(state.buff_line), &(state.buff_size), file) != -1)
+	{
+		state.data++;
+		execute_instruction(stack_handle);
+	}
+	free(state.buff_line);
+	stack_free(state.stack);
 
 }
