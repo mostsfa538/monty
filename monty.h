@@ -62,7 +62,7 @@ void execute_instruction(instruction_t *stack_handle);
 
 /*	 functions of stack	 */
 
-void _push(stack_t **stack, unsigned int date);
+void _push(stack_t **stack, unsigned int data);
 void _pop(stack_t **stack, unsigned int data);
 void _pall(stack_t **stack, unsigned int data);
 void _print(stack_t **stack, unsigned int data);
