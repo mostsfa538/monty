@@ -1,7 +1,7 @@
 #include "monty.h"
 
 /**
- * _pall - palls in stack
+ * _pall - prints all the values on the stack
  * @stack: the stack
  * @data: data
  *
@@ -10,7 +10,7 @@
 void _pall(stack_t **stack, unsigned int data)
 {
 	stack_t *p = *stack;
-	void(data);
+	(void)data;
 
 	while (p)
 	{
