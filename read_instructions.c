@@ -4,7 +4,6 @@
  * read_instructions - read instructions of input
  * @file: Pointer to file that have the input
  */
-
 void read_instructions(FILE *file)
 {
 	instruction_t handel_stack[] = {
