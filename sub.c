@@ -10,7 +10,6 @@
 void _sub(stack_t **stack, unsigned int data)
 {
 	int sub = 0;
-	stack_t *temp;
 
 	if (state.stack_size < 2)
 	{
@@ -19,7 +18,6 @@ void _sub(stack_t **stack, unsigned int data)
 	}
 
 	sub = (*stack)->n - (*stack)->prev->n;
-	temp = (*stack)->prev;
 	_pop(stack, data);
-	temp->n = sub;
+	(*stack)->n = sub;
 }
