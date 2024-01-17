@@ -11,7 +11,7 @@ void read_instructions(FILE *file)
 		{"push", _push},
 		{"pop", _pop},
 		{"pall", _pall},
-		{"pint", _pint},
+		{"pint", _print},
 		{"swap", _swap},
 		{"nop", _nop},
 		{"add", _add},
