@@ -12,6 +12,8 @@ void _pall(stack_t **stack, unsigned int data)
 	stack_t *p = *stack;
 	(void)data;
 
+	if (stack == NULL || *stack == NULL)
+		return;
 	while (p)
 	{
 		printf("%d\n", p->n);
