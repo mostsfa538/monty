@@ -24,6 +24,6 @@ void _div(stack_t **stack, unsigned int data)
 	}
 
 	sum = (*stack)->prev->n / (*stack)->n;
-	_pop(&(*stack), data);
+	_pop(stack, data);
 	(*stack)->n = sum;
 }
