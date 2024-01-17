@@ -46,5 +46,6 @@ void _push(stack_t **stack, unsigned int data)
 
 	newNode->n = str_to_num(opcode_arg);
 	*stack = newNode;
+
 	state.stack_size++;
 }
