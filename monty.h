@@ -65,7 +65,7 @@ void execute_instruction(instruction_t *stack_handle);
 void _push(stack_t **stack, unsigned int data);
 void _pop(stack_t **stack, unsigned int data);
 void _pall(stack_t **stack, unsigned int data);
-void _print(stack_t **stack, unsigned int data);
+void _pint(stack_t **stack, unsigned int data);
 void _swap(stack_t **stack, unsigned int data);
 void _nop(stack_t **stack, unsigned int data);
 void _add(stack_t **stack, unsigned int data);
