@@ -1,2 +1,2 @@
-# monty
-Stack and Queue Project
+# monty interpreter
+Stack and Queue Project 
